@@ -1,0 +1,15 @@
+services:
+    - docker
+
+language: python
+
+branches:
+    only:
+        -master
+
+script:
+    - sudo apt-get update && sudo apt-get install python-pip python3-pip
+    - pip install Flask
+
+deploy:
+    - python main.py
