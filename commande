@@ -1,0 +1,7 @@
+cd C:/Users/Utilisateur/Documents/Cours/5_annee/ducker/Docker
+
+docker build -t maintest .
+
+docker images
+
+docker run  maintest
